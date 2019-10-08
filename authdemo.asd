@@ -1,5 +1,5 @@
 (defpackage #:authdemo-config (:export #:*base-directory*))
-(defparameter authdemo-config:*base-directory* 
+(defparameter authdemo-config:*base-directory*
   (make-pathname :name nil :type nil :defaults *load-truename*))
 
 (asdf:defsystem #:authdemo
@@ -9,4 +9,5 @@
   :license "Your license here"
   :depends-on (:RESTAS :SEXML)
   :components ((:file "defmodule")
+               (:file "template")
                (:file "authdemo")))
